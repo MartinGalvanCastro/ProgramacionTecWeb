@@ -1,0 +1,189 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Martin Galvan" />
+    <title>Entrega HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Entrega de Martin Galvan</h1>
+      <img src="FotoGenerica.jpeg" alt="Foto mia" width="200" height="400">
+      <hr>
+    </header>
+    <nav id="nav">
+        <h2>Menu</h2>
+        <a href="#Welcome">Bienvenidos</a> |
+        <a href="#Table">Datos Biograficos</a> |
+        <a href="#Lista">Formación Academica</a> |
+        <a href="#Fav">Cosas de Interes</a> |
+        <a href="#form">¡Contactame!</a> |
+        <a href="#foot">Datos de contacto</a> |
+    </nav>
+    <hr>
+    <main>
+      <!--Sección de mensaje de bienvenida-->
+      <section id="Welcome">
+        <h2>Bienvenidos a la pagina web de la entrega HTML</h2>
+        <p>
+          Esta pagina se compone de 5 secciones. Una sección de bienvenida, la
+          siguiente con datos biograficos sobre mi, la siguiente mis datos
+          academicos, la siguiente mis sitios de interes, y la ultima un
+          formulario de contacto. Finalmente, se encontraran mis datos de
+          contacto.
+        </p>
+        <p>
+          Para navegar por esta pagina se tiene que usar la barra de navegación
+          para ir a travez de las diferentes secciones
+        </p>
+      <a href="#nav">Volver</a>
+    </section>
+      <hr />
+      <!--Seccion de datos biograficos-->
+      <section id="Table">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2"><h3>Datos Biograficos</h3></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Nombre:</th>
+              <td>Martin David Galvan Castro</td>
+            </tr>
+            <tr>
+              <th>Fecha de Nacimiento:</th>
+              <td>10 de Octubre de 1998</td>
+            </tr>
+            <tr>
+              <th>Ciudad de Nacimiento:</th>
+              <td>Bogotá</td>
+            </tr>
+            <tr>
+              <th rowspan="3">Hobbies:</th>
+              <td>Jugar videojuegos</td>
+            </tr>
+            <tr>
+              <td>Aprender cosas nuevas</td>
+            </tr>
+            <tr>
+              <td>Ver peliculas y series</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#nav">Volver</a>
+      </section>
+      <hr />
+      <!--Seccion de datos academicos-->
+      <section id="Lista">
+        <h3>Datos Academicos</h3>
+        <ul>
+          <li>
+            <strong>Gimnasio Los Pinos</strong>
+            <dl>
+              <dt><em>Bachiller: </em></dt>
+              <dd>Año de terminación: 2015</dd>
+            </dl>
+          </li>
+          <li>
+            <strong>Universidad de los Andes</strong>
+            <dl>
+              <dt><em>Ingenieria Mecanica:</em></dt>
+              <dd>Año de comienzo: 2016</dd>
+              <dd>Año de finalización: 2020</dd>
+
+              <dt><em>Ingenieria de Sistemas y Computación:</em></dt>
+              <dd>Año de comienzo: 2016</dd>
+              <dd>Año de finalización: 2021</dd>
+            </dl>
+          </li>
+        </ul>
+        <a href="#nav">Volver</a>
+      </section>
+      <hr />
+
+      <!--Sección Sitios de Interes-->
+      <section id="Fav">
+          <h3>Cosas de interes</h3>
+        <ul>
+            <li><strong>Videos Favoritos</strong>
+                <ul>
+                    <li>
+                      <em>The Engoodening of No Man's Sky</em><br />
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/O5BJVO3PDeQ"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </li>
+                    <li>
+                    <em>Jim's Pranks Against Dwight - The Office US</em><br />
+                      <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Xnk4seEHmgw"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#nav">Volver</a>
+      </section>
+      <hr />
+      <!--Sección de formulario de contacto-->
+      <section id ="form">
+          <h3>Formulario de Contacto</h3>
+          <form>
+              <div>
+                  <label for="nombre">Nombre: </label></br>
+                  <input type="text" id="nombre">
+              </div>
+              <div>
+                <label for="email">Correo: </label></br>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="msg">Mensaje: </label></br>
+                <textarea style="resize:none" id="msg"></textarea>
+            </div>
+            <div>
+                <input type="reset" value="Borrar Datos">
+                <input type="submit" value="Enviar Mensaje">
+            </div>
+          </form>
+          <a href="#nav">Volver</a>
+      </section>
+      <hr />
+    </main>
+    <footer id = "foot">
+        <table>
+            <thead>
+              <tr>
+                <th colspan="2"><h3>Datos de Contacto</h3></th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th rowspan="2">Correos :</th>
+                <td>md.galvan@uniandes.edu.co</td>
+              </tr>
+              <tr>
+                <td>martin2galvan@hotmail.com</td>
+              </tr>
+              <tr>
+                <th>Celular:</th>
+                <td>(+571) 305-7066739</td>
+              </tr>
+            </tbody>
+          </table>
+        </table>
+        <a href="#nav">Volver</a>
+    </footer>
+  </body>
+</html>
