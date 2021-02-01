@@ -2,7 +2,7 @@
 
 ---
 ## TODO:
-- Agregar Imágenes en cosas de interés
+
 
 ## COMPLETED:
 - Navegación barra de menú (Ir y Volver)
@@ -13,6 +13,7 @@
 - Iframe
 - Formulario
 - Datos contacto
+- Agregar Imágenes en cosas de interés
 
 ---
-[Volver](https://github.com/MartinGalvanCastro/ProgramacionTecWeb)
+[Volver](https://github.com/MartinGalvanCastro/ProgramacionTecWe)
