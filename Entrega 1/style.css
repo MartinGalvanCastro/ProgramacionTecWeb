@@ -1,0 +1,50 @@
+/*---------------------------------
+# Author: Martin David Galvan Castro
+-----------------------------------*/
+
+/*---------------------------------
+#  Header (Banner)
+----------------------------------*/
+header{
+    margin-top:1.5%;   /*Separación borde de arriba de la pagina*/
+}
+
+#carousel{
+    background-color:lightgray; /*Color de fondo del carrusel*/
+}
+/*---------------------------------
+#  Barra de navegación 
+----------------------------------*/
+nav{
+    margin-bottom: 0px;
+}
+
+.navbar-brand{
+    padding-left: 4%; /*Padding para que no quede tan al borde*/
+}
+
+.section-header{
+    padding-top:1%;
+    background-color: red;
+}
+
+.section-content{
+    padding-top:1.5%;
+}
+
+.info-list{
+    list-style-type:none;
+    text-align: justify;
+}
+
+.fa-li{
+    margin-right:2%;
+}
+
+.info-text{
+    font-size: 125%;
+}
+
+section{
+    margin-bottom:2%;
+}
