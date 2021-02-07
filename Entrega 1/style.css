@@ -3,48 +3,108 @@
 -----------------------------------*/
 
 /*---------------------------------
+# General
+----------------------------------*/
+.section-header {
+  padding-top: 1%;
+  background-color: red;
+  text-align: center;
+}
+
+.section-content {
+  padding-top: 1.5%; /*Separación entre las secciones*/
+}
+
+.section {
+  margin-bottom: 5%; /*Separación borde de arriba de la pagina*/
+}
+
+/*---------------------------------
 #  Header (Banner)
 ----------------------------------*/
-header{
-    margin-top:1.5%;   /*Separación borde de arriba de la pagina*/
+#carousel {
+  background-color: lightgray; /*Color de fondo del carrusel*/
 }
 
-#carousel{
-    background-color:lightgray; /*Color de fondo del carrusel*/
-}
 /*---------------------------------
-#  Barra de navegación 
+#  NavBaar
 ----------------------------------*/
-nav{
-    margin-bottom: 0px;
+nav {
+  margin-bottom: 0px;
 }
 
-.navbar-brand{
-    padding-left: 4%; /*Padding para que no quede tan al borde*/
+.navbar-brand {
+  padding-left: 4%; /*Padding para que no quede tan al borde*/
 }
 
-.section-header{
-    padding-top:1%;
-    background-color: red;
+/*---------------------------------
+#  About Me
+----------------------------------*/
+.info-list {
+  list-style-type: none;
+  text-align: justify;
 }
 
-.section-content{
-    padding-top:1.5%;
+.fa-li {
+  margin-right: 2%;
 }
 
-.info-list{
-    list-style-type:none;
-    text-align: justify;
+.info-text {
+  font-size: 125%;
 }
 
-.fa-li{
-    margin-right:2%;
+/*---------------------------------
+#  Skills
+----------------------------------*/
+#skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
 }
 
-.info-text{
-    font-size: 125%;
+#skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  color: #45505b;
 }
 
-section{
-    margin-bottom:2%;
+#skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+#skills .progress-bar-wrap {
+  background: #f2f3f5;
+}
+
+#skills .progress-bar {
+  height: 15px;
+  transition: 0.9s;
+  background-color: #0563bb;
+}
+
+#skills footer span{
+    font-size:x-small;
+}
+
+
+/*---------------------------------
+#  Professional Trajectory
+----------------------------------*/
+#professional .card{
+    width:50rem;
+}
+
+
+#professional .trajectory-list li{
+    font-weight: bold;
+}
+
+#professional .trajectory-list li span{
+    padding-left: 5%;
+    font-weight: normal;
+    font-style: italic;
 }

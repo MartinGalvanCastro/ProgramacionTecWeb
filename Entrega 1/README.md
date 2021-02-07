@@ -5,21 +5,8 @@ Este es mi sitio web personal, lo construi usando HTML, CSS y Bootstrap
 ---
 ## TODO LIST:
 - ### Estructura
-  - Banner
-  - Menu navegación
-  - Area de Contenido
   - Footer
-
-- ### Contenido
-  - Quien soy yo
-  - Proyectos
-  - Hobbies, Intereses y habilidades
-  - Formación academia y experiencia
-
 - ### Cont. Multimedia
-  - Texto
-  - Imágenes
-  - Intereses
   - Audio
   
 - ### Framework
@@ -46,9 +33,21 @@ Este es mi sitio web personal, lo construi usando HTML, CSS y Bootstrap
 ---
 
 ## DONE:
-- ### Estructura
+- ### Estructura:
+  - Banner
+  - Menu navegación
+  - Area de Contenido
 - ### Contenido
+  - Quien soy yo
+  - Proyectos
+  - Hobbies, Intereses y habilidades
+  - Formación academia y experiencia
+  - 
 - ### Cont. Multimedia
+  - Texto
+  - Imágenes
+  - Intereses
+
 - ### Framework
 - ### Ajuste
 - ### Navegador
