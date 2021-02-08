@@ -40,32 +40,31 @@
 <body>
 
 
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-top sticky-top">
+    <!--Website Name-->
+    <h1 class="navbar-brand"> Martin's <br> Website </h1>
 
+    <!--Dropdown Menu button-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Dropdown items and Navbar items-->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#WAI">Who Am I?
+          <a class="nav-item nav-link" href="#projects">Projects</a>
+          <a class="nav-item nav-link" href="#skills">Skills</a>
+          <a class="nav-item nav-link" href="#professional">Trajectory</a>
+          <a class="nav item nav-link" href="#contact">Contact Information</a>
+      </div>
+    </div>
+  </nav>
 
   <!--Banner container-->
-  <header class="section">
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-top">
-      <!--Website Name-->
-      <h1 class="navbar-brand"> Martin's <br> Website </h1>
-
-      <!--Dropdown Menu button-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!--Dropdown items and Navbar items-->
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#WAI">Who Am I?
-            <a class="nav-item nav-link" href="#projects">Projects</a>
-            <a class="nav-item nav-link" href="#skills">Skills</a>
-            <a class="nav-item nav-link" href="#professional">Trajectory</a>
-            <a class="nav item nav-link" href="#contact">Contact Information</a>
-        </div>
-      </div>
-    </nav>
+  <header>
 
     <!--Banner-->
     <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -76,11 +75,11 @@
         <!--First Slide-->
         <div class="carousel-item active">
           <!--Photo-->
-          <img class="d-block w-100"
+          <img class="d-block w-100 img-responsive"
             src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
             alt="Carrousel image">
           <!--Caption-->
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption ">
             <!--Text-->
             <h4>Hi, welcome to my website</h4><br>
             <!--Scroll Down button-->
@@ -100,7 +99,7 @@
         <!--Second Slide-->
         <div class="carousel-item">
           <!--Photo-->
-          <img class="d-block w-100"
+          <img class="d-block w-100 img-responsive"
             src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
             alt="Carrousel image">
           <!--Caption-->
@@ -124,7 +123,7 @@
         <!--Third Slide-->
         <div class="carousel-item">
           <!--Photo-->
-          <img class="d-block w-100"
+          <img class="d-block w-100 img-responsive"
             src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
             alt="Carrousel image">
           <!--Caption-->
@@ -153,11 +152,11 @@
   <main class="container">
 
     <!--Who Am I? Section-->
-    <section id="WAI" class="container section">
+    <section id="WAI">
 
       <!--Title section header-->
-      <header class="row section-header">
-        <div class="col ">
+      <header class="row" id="section-header">
+        <div class="col-lg-12 ">
           <h2>Who Am I?</h2>
         </div>
       </header>
@@ -213,9 +212,9 @@
     </section>
 
     <!--Projects Section-->
-    <section id="projects" class="container section">
+    <section id="projects" class="container" id="section">
       <!--Title section header-->
-      <header class="row section-header">
+      <header class="row" id="section-header">
         <div class="col ">
           <h2>Projects</h2>
         </div>
@@ -228,8 +227,8 @@
           <div class="card h-60">
 
             <!--Card Header-->
-            <iframe height="300" src="https://www.youtube.com/embed/3AkOYyTW40E" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            <iframe height="250" src="https://www.youtube.com/embed/3AkOYyTW40E" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture responsive-iframe"
               allowfullscreen></iframe>
 
             <!--Card text-->
@@ -255,7 +254,7 @@
           <div class="card h-80">
 
             <!--Card Header-->
-            <img src="imgs/apoyafem.png" class="card-img-top" alt="ApoyaFem Logo">
+            <img src="imgs/apoyafem.png" class="card-img-top img-responsive w-75" alt="ApoyaFem Logo">
 
             <!--Card Body-->
             <div class="card-body">
@@ -278,7 +277,7 @@
           <div class="card h-30">
 
             <!--Card Header-->
-            <img src="imgs/Sencabot.JPG" class="card-img-top" alt="Senecabot">
+            <img src="imgs/Sencabot.JPG" class="card-img-top img-responsive" alt="Senecabot">
 
             <!--Card Body-->
             <div class="card-body">
@@ -297,21 +296,19 @@
         </div>
     </section>
 
-    <section id="skills" class="container section">
+    <section id="skills" class="container">
       <!--Title section header-->
-      <header class="row section-header">
+      <header class="row" id="section-header">
         <div class="col ">
           <h2>Skills</h2>
         </div>
       </header>
 
       <!--Section content-->
-      <article class="row row-cols-sm-1 section-content">
-
-        <!--Rows of Cards-->
-        <div class="card-deck">
-
-          <!--Category 1-->
+      <!--Rows of Cards-->
+      <article class="row">
+        <!--Category 1-->
+        <div class="col-lg-4 col-sm-12 mb-5 mt-3">
           <div class="card">
             <div class="card-header">
               <h5 class="card-title">Programming Skills</h5>
@@ -368,7 +365,10 @@
             </div>
           </div>
 
-          <!--Category 2-->
+        </div>
+
+        <!--Category 2-->
+        <div class="col-lg-4 col-sm-12 mb-5 mt-3">
           <div class="card">
             <div class="card-header">
               <h5 class="card-title">Specialized Software</h5>
@@ -402,8 +402,10 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <!--Category 3-->
+        <!--Category 3-->
+        <div class="col-lg-4 col-sm-12 mb-5 mt-3">
           <div class="card">
             <div class="card-header">
               <h5 class="card-title">Language</h5>
@@ -413,8 +415,8 @@
               <div class="progress">
                 <span class="skill">Spanish<i class="val">Native</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25"
-                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
                 </div>
               </div>
 
@@ -428,15 +430,16 @@
               </div>
             </div>
           </div>
+        </div>
 
         </div>
 
       </article>
     </section>
 
-    <section id="professional" class="container section">
+    <section id="professional" class="container">
       <!--Title section header-->
-      <header class="row section-header">
+      <header class="row" id="section-header">
         <div class="col ">
           <h2>Professional Trajectory</h2>
         </div>
@@ -490,6 +493,8 @@
         </div>
       </article>
     </section>
+    
+
   </main>
 
   <footer id="contact" class="container">
