@@ -3,8 +3,6 @@
 <head>
   <!--Icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-
   <!--Bootstrap Imports-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -14,166 +12,84 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
-
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
-
-
   <!--My CSS-->
   <link href="style.css" rel="stylesheet">
-
-
   <!--Metadata-->
   <meta charset="UTF-8" />
   <meta author="Martin Galvan" />
-
-
   <!--Title-->
   <title>Martin's Website</title>
 
+  <!--Scroll-->
+  
 
 </head>
 
 <body>
 
-
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-top sticky-top">
     <!--Website Name-->
     <h1 class="navbar-brand"> Martin's <br> Website </h1>
-
     <!--Dropdown Menu button-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <!--Dropdown items and Navbar items-->
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#WAI">Who Am I?
-          <a class="nav-item nav-link" href="#projects">Projects</a>
-          <a class="nav-item nav-link" href="#skills">Skills</a>
-          <a class="nav-item nav-link" href="#professional">Trajectory</a>
-          <a class="nav item nav-link" href="#contact">Contact Information</a>
+        <a class="nav-item nav-link"  href="#WAI">Who Am I?
+          <a class="nav-item nav-link"  href="#projects">Projects</a>
+          <a class="nav-item nav-link"  href="#skills">Skills</a>
+          <a class="nav-item nav-link"  href="#professional">Trajectory</a>
+          <a class="nav item nav-link"  href="CV_Ingles.pdf">My CV</a>
       </div>
     </div>
-  </nav>
 
+    <span class="navbar-text">
+      Play some music :D
+    </span>
+    <iframe src="https://open.spotify.com/embed/playlist/1PKYiQbbX3Fak5c9SiYpFQ" width="80" height="80" frameborder="0"
+      allowtransparency="true" allow="encrypted-media" play="true"></iframe>
+
+  </nav>
   <!--Banner container-->
   <header>
-
     <!--Banner-->
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-
-      <!--Banner elements-->
-      <div class="carousel-inner">
-
-        <!--First Slide-->
-        <div class="carousel-item active">
-          <!--Photo-->
-          <img class="d-block w-100 img-responsive"
-            src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
-            alt="Carrousel image">
-          <!--Caption-->
-          <div class="carousel-caption ">
-            <!--Text-->
-            <h4>Hi, welcome to my website</h4><br>
-            <!--Scroll Down button-->
-            <a href="#WAI" class="scroll-down">
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
-                class="bi bi-chevron-double-down scroll-down" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                  d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                <path fill-rule="evenodd"
-                  d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-
-        <!--Second Slide-->
-        <div class="carousel-item">
-          <!--Photo-->
-          <img class="d-block w-100 img-responsive"
-            src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
-            alt="Carrousel image">
-          <!--Caption-->
-          <div class="carousel-caption d-none d-md-block">
-            <!--Text-->
-            <h4>I'm Martin. Nice to meet you!</h4><br>
-            <!--Scroll Down button-->
-            <a href="#WAI" class="scroll-down">
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
-                class="bi bi-chevron-double-down scroll-down" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                  d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                <path fill-rule="evenodd"
-                  d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-
-        <!--Third Slide-->
-        <div class="carousel-item">
-          <!--Photo-->
-          <img class="d-block w-100 img-responsive"
-            src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
-            alt="Carrousel image">
-          <!--Caption-->
-          <div class="carousel-caption d-none d-md-block">
-            <!--Text-->
-            <h4>Click in the arrows below to explore this website</h4><br>
-            <!--Scroll Down button-->
-            <a href="#WAI" class="scroll-down">
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor"
-                class="bi bi-chevron-double-down scroll-down" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                  d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                <path fill-rule="evenodd"
-                  d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <img class="d-block w-100 img-responsive"
+    src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
+    alt="Carrousel image">
+    <div class="centered"><h1>Hi, I'm Martin.<br><br>Welcome to my Website<br><br><a href="#WAI" class="scroll-down"><i class="bi bi-chevron-double-down"></i></a></h1></div>
   </header>
-
-
-
   <!--Information-->
-  <main class="container">
-
+  <main class="container" data-spy="scroll" data-target="spy-scroll-id">
     <!--Who Am I? Section-->
     <section id="WAI">
-
       <!--Title section header-->
       <header class="row" id="section-header">
         <div class="col-lg-12 ">
           <h2>Who Am I?</h2>
         </div>
       </header>
-
       <!--Section content-->
       <article class="row section-content">
         <!--PhotoFrame Col-->
-        <div class="col-lg-4">
-          <img src="imgs/perfil2.jpg" alt="Foto de Perfil" class="img-fluid rounded img-perfil" width="380"
-            height="460">
+        <div class="col-lg-4 col-sm-12 text-center rounded">
+          <img src="imgs/perfil2.jpg" alt="Foto de Perfil" class="img-fluid rounded img-perfil img-responsive">
         </div>
         <!--Information-->
-        <div class="col-lg-8" id="info-group">
+        <div class="col-lg-8 col-sm-12 mt-4" id="info-group">
           <ul class="info-list fa-ul">
             <li>
               <p class="info-text"><span class="fa-li"><i class="bi bi-person-circle"></i></i></span>Martin David
-                Galvan Castro</p>
+                Galvan Castro
+              </p>
             </li>
             <li>
               <p class="info-text"><span class="fa-li"><i class="bi bi-geo-alt"></i></span>Bogotá, Colombia
@@ -200,17 +116,18 @@
                 With interests in systems simulation and modeling, numerical methods, robotics,
                 industry 4.0. With experience working with Python, Latex, Django, ROSPy, Java,
                 Matlab, MySQL, MongoDB, PyGame, Angular,AWS, 3D CAD modelling in Autodesk
-                Inventor and Finite Element Simulation for stress analysis on Ansys Workbench.</p>
+                Inventor and Finite Element Simulation for stress analysis on Ansys Workbench.
+              </p>
             </li>
             <li>
               <p class="info-text"><span class="fa-li"><i class="bi bi-chat-left-text"></i></span>My Hobbies are play
-                videogames, watch series, and hangout with my family, friends and my girlfriend</p>
+                videogames, watch series, and hangout with my family, friends and my girlfriend
+              </p>
             </li>
           </ul>
         </div>
       </article>
     </section>
-
     <!--Projects Section-->
     <section id="projects" class="container" id="section">
       <!--Title section header-->
@@ -219,26 +136,22 @@
           <h2>Projects</h2>
         </div>
       </header>
-
       <!--Section content-->
       <article class="row section-content">
-        <div class="col">
+        <div class="col mt-3">
           <!--Project 1-->
           <div class="card h-60">
-
             <!--Card Header-->
-            <iframe height="250" src="https://www.youtube.com/embed/3AkOYyTW40E" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture responsive-iframe"
-              allowfullscreen></iframe>
-
+            <iframe height="250" src="https://www.youtube.com/embed/3AkOYyTW40E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture 
+                     allowfullscreen"></iframe>
             <!--Card text-->
             <div class="card-body">
               <h5 class="card-title">Dynamic analysis of semi-passive bipedal walker with double pendulum model
               </h5>
               <p class="card-text">Modeling and Simulation of a semi-passive bipedal walker powered by
-                electromagnets in Matlab and Simulink.</p>
+                electromagnets in Matlab and Simulink.
+              </p>
             </div>
-
             <!--Card Footer-->
             <div class="card-footer">
               <a href="https://www.youtube.com/watch?v=3AkOYyTW40E" class="btn btn-danger"><i class="bi bi-youtube"></i>
@@ -248,22 +161,19 @@
             </div>
           </div>
         </div>
-
         <!--Project 2-->
-        <div class="col">
+        <div class="col mt-3">
           <div class="card h-80">
-
             <!--Card Header-->
             <img src="imgs/apoyafem.png" class="card-img-top img-responsive w-75" alt="ApoyaFem Logo">
-
             <!--Card Body-->
             <div class="card-body">
               <h5 class="card-title">ApoyaFem</h5>
               <p class="card-text">Developed a REST-API for social impact application. The objective of the
                 application was to help women's victims of household violence in Colombia. This project was winner of
-                La Muestra Uniandes 2020-2</p>
+                La Muestra Uniandes 2020-2
+              </p>
             </div>
-
             <!--Card Footer-->
             <div class="card-footer">
               <a href="https://github.com/MartinGalvanCastro/ApoyaFem-API" class="btn btn-dark"><i
@@ -271,14 +181,11 @@
             </div>
           </div>
         </div>
-
         <!--Project 3-->
-        <div class="col">
+        <div class="col mt-3">
           <div class="card h-30">
-
             <!--Card Header-->
             <img src="imgs/Sencabot.JPG" class="card-img-top img-responsive" alt="Senecabot">
-
             <!--Card Body-->
             <div class="card-body">
               <h5 class="card-title">Senecabot</h5>
@@ -286,7 +193,6 @@
                 for autonomous navigation robot.
               </p>
             </div>
-
             <!--Card Footer-->
             <div class="card-footer">
               <a href="https://github.com/MartinGalvanCastro/Robotica/tree/master/src/proyecto" class="btn btn-dark"><i
@@ -295,7 +201,6 @@
           </div>
         </div>
     </section>
-
     <section id="skills" class="container">
       <!--Title section header-->
       <header class="row" id="section-header">
@@ -303,12 +208,11 @@
           <h2>Skills</h2>
         </div>
       </header>
-
       <!--Section content-->
       <!--Rows of Cards-->
       <article class="row">
         <!--Category 1-->
-        <div class="col-lg-4 col-sm-12 mb-5 mt-3">
+        <div class="col-lg-4 col-sm-12 mt-3">
           <div class="card">
             <div class="card-header">
               <h5 class="card-title">Programming Skills</h5>
@@ -325,7 +229,6 @@
               <footer>
                 <span>*In the use of Numpy, Pandas, ROSPy, OpenCV, Django</span>
               </footer>
-
               <!--Skill-->
               <div class="progress">
                 <span class="skill">Java<i class="val">Proeficient</i></span>
@@ -334,7 +237,6 @@
                     aria-valuemax="100"></div>
                 </div>
               </div>
-
               <!--Skill-->
               <div class="progress">
                 <span class="skill">HTML<i class="val">Intermediate</i></span>
@@ -343,7 +245,6 @@
                     aria-valuemax="100"></div>
                 </div>
               </div>
-
               <!--Skill-->
               <div class="progress">
                 <span class="skill">Angular<i class="val">Intermediate</i></span>
@@ -352,7 +253,6 @@
                     aria-valuemax="100"></div>
                 </div>
               </div>
-
               <!--Skill-->
               <div class="progress">
                 <span class="skill">CSS<i class="val">Novice</i></span>
@@ -361,14 +261,11 @@
                     aria-valuemax="100"></div>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
-
         <!--Category 2-->
-        <div class="col-lg-4 col-sm-12 mb-5 mt-3">
+        <div class="col-lg-4 col-sm-12 mt-3">
           <div class="card">
             <div class="card-header">
               <h5 class="card-title">Specialized Software</h5>
@@ -382,7 +279,6 @@
                     aria-valuemax="100"></div>
                 </div>
               </div>
-
               <!--Skill-->
               <div class="progress">
                 <span class="skill">Matlab<i class="val">Proeficient</i></span>
@@ -391,7 +287,6 @@
                     aria-valuemax="100"></div>
                 </div>
               </div>
-
               <!--Skill-->
               <div class="progress">
                 <span class="skill">Ansys Workbench<i class="val">Advanced</i></span>
@@ -403,9 +298,8 @@
             </div>
           </div>
         </div>
-
         <!--Category 3-->
-        <div class="col-lg-4 col-sm-12 mb-5 mt-3">
+        <div class="col-lg-4 col-sm-12 mt-3">
           <div class="card">
             <div class="card-header">
               <h5 class="card-title">Language</h5>
@@ -419,7 +313,6 @@
                     aria-valuemax="100"></div>
                 </div>
               </div>
-
               <!--Skill-->
               <div class="progress">
                 <span class="skill">English<i class="val">IELTS C1</i></span>
@@ -431,12 +324,9 @@
             </div>
           </div>
         </div>
-
         </div>
-
       </article>
     </section>
-
     <section id="professional" class="container">
       <!--Title section header-->
       <header class="row" id="section-header">
@@ -444,64 +334,77 @@
           <h2>Professional Trajectory</h2>
         </div>
       </header>
-
       <!--Section content-->
       <article class="row section-content">
-        <!--Rows of Cards-->
-        <div class="col">
-          <div class="card-deck">
-
-            <!--Category 1-->
-            <div class="card">
-              <div class="card-header">
-                <h5 class="card-title">Academic Trajectory</h5>
-              </div>
-              <div class="card-body">
-                <ul class="trajectory-list">
-                  <li>Colegio Gimnasio Los Pinos<br>
-                    <span>Graduated in 2015</span>
-                  </li>
-
-                  <li>Mechanical Engineering Degree<br>
-                    <span>2016-2020</span>
-                  </li>
-
-
-                  <li>Computer and System Engineering<br>
-                    <span>2016-2021</span>
-                  </li>
-
-                </ul>
-              </div>
+        <div class="col-lg-6 col-sm-12">
+          <!--Category 1-->
+          <div class="card">
+            <div class="card-header">
+              <h5 class="card-title">Academic Trajectory</h5>
             </div>
+            <div class="card-body">
+              <ul class="trajectory-list">
+                <li>Gimnasio Los Pinos High School<br>
+                  <span>Graduated in 2015</span>
+                </li>
 
-            <!--Category 1-->
-            <div class="card">
-              <div class="card-header">
-                <h5 class="card-title">Professional Trajectory</h5>
-              </div>
-              <div class="card-body">
-                <ul class="trajectory-list">
-                  <li>Help Desk Support Engineer<br>
-                    <span>2020-Actual</span>
-                  </li>
-                </ul>
-              </div>
+                <li>Mechanical Engineering Degree<br>
+                  <span>At Universidad de Los Andes</span><br>
+                  <span>Graduated in 2020</span>
+                </li>
+
+
+                <li>Computer and System Engineering<br>
+                  <span>At Universidad de Los Andes</span><br>
+                  <span>Currently in senior year</span>
+                </li>
+              </ul>
             </div>
-
           </div>
         </div>
+
+        <div class="col-lg-6 col-sm-12">
+          <!--Category 1-->
+          <div class="card">
+            <div class="card-header">
+              <h5 class="card-title">Professional Trajectory</h5>
+            </div>
+            <div class="card-body">
+              <ul class="trajectory-list">
+                <li>Freelancer Tutor<br>
+                  <span>At Livingston Research</span><br>
+                  <span>10 2020-02 2021</span>
+                </li>
+                <li>Help Desk Support Engineer<br>
+                  <span>At LiveU</span><br>
+                  <span>02 2020-Actual</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </article>
     </section>
-    
-
   </main>
 
+  <hr>
+
   <footer id="contact" class="container">
-
+    <div class="row">
+      <!--Firma de copyrigth. Generada con: https://www.html-code-generator.com/html/website-copyright-generator-->
+      <div class="col-lg-12 col-sm-12" id="copyright">
+        <script>
+          document.write('&copy;');
+          document.write(' 2021 - ');
+          document.write(new Date().getFullYear());
+          document.write(' Martin Galvan - All Rights Reserved.');
+          document.write('<br/>Last Updated : ');
+          document.write(document.lastModified);
+        </script>
+      </div>
+    </div>
   </footer>
-
-
 </body>
 
 </html>
