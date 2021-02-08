@@ -3,22 +3,15 @@
 ## Descripcion:
 Este es mi sitio web personal, lo construi usando HTML, CSS y Bootstrap
 
-# NOTA: CAMBIAR CARD DECK Y CARD GROUP POR CARD GRID
 ---
 ## TODO LIST:
-- ### Estructura
-  - Footer
-- ### Cont. Multimedia
-  - Audio
+
   
 - ### Ajuste
-  - Small
   - Medium
-  - Large
+  
 
-- ### Navegador
-  - Chrome
-  - Edge
+- ### Navegador 
   - Firefox
 
 - ### Estilo
@@ -36,6 +29,7 @@ Este es mi sitio web personal, lo construi usando HTML, CSS y Bootstrap
   - Banner
   - Menu navegación
   - Area de Contenido
+  - Footer
 - ### Contenido
   - Quien soy yo
   - Proyectos
@@ -46,11 +40,15 @@ Este es mi sitio web personal, lo construi usando HTML, CSS y Bootstrap
   - Texto
   - Imágenes
   - Intereses
-
+  - Audio
 - ### Framework
     - Bootstrap
-  
 - ### Ajuste
+  - Small
+  - Large 
 - ### Navegador
+   - Edge
+   - Chrome
+
 - ### Estilo
 - ### Código

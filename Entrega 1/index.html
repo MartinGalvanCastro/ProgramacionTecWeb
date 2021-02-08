@@ -26,7 +26,7 @@
   <title>Martin's Website</title>
 
   <!--Scroll-->
-  
+
 
 </head>
 
@@ -35,7 +35,7 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-top sticky-top">
     <!--Website Name-->
-    <h1 class="navbar-brand"> Martin's <br> Website </h1>
+    <h1 class="navbar-brand">Martin's <br> Website </h1>
     <!--Dropdown Menu button-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,11 +44,11 @@
     <!--Dropdown items and Navbar items-->
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link"  href="#WAI">Who Am I?
-          <a class="nav-item nav-link"  href="#projects">Projects</a>
-          <a class="nav-item nav-link"  href="#skills">Skills</a>
-          <a class="nav-item nav-link"  href="#professional">Trajectory</a>
-          <a class="nav item nav-link"  href="CV_Ingles.pdf">My CV</a>
+        <a class="nav-item nav-link" href="#WAI">Who Am I?
+          <a class="nav-item nav-link" href="#projects">Projects</a>
+          <a class="nav-item nav-link" href="#skills">Skills</a>
+          <a class="nav-item nav-link" href="#professional">Trajectory</a>
+          <a class="nav item nav-link" href="CV_Ingles.pdf">My CV</a>
       </div>
     </div>
 
@@ -60,73 +60,95 @@
 
   </nav>
   <!--Banner container-->
-  <header>
+  <header id="banner">
     <!--Banner-->
-    <img class="d-block w-100 img-responsive"
-    src="https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300"
-    alt="Carrousel image">
-    <div class="centered"><h1>Hi, I'm Martin.<br><br>Welcome to my Website<br><br><a href="#WAI" class="scroll-down"><i class="bi bi-chevron-double-down"></i></a></h1></div>
+    <img class="d-block w-100 img-responsive" src="imgs/banner.jpg" alt="Carrousel image">
+    <div class="centered">
+      <h1>Hi, I'm Martin.<br><br>Welcome to my Website<br><br>Click to scroll down<br><br><a href="#WAI"
+          class="scroll-down"><i class="bi bi-chevron-double-down"></i></a></h1>
+    </div>
   </header>
   <!--Information-->
   <main class="container" data-spy="scroll" data-target="spy-scroll-id">
     <!--Who Am I? Section-->
     <section id="WAI">
-      <!--Title section header-->
-      <header class="row" id="section-header">
-        <div class="col-lg-12 ">
-          <h2>Who Am I?</h2>
-        </div>
-      </header>
-      <!--Section content-->
-      <article class="row section-content">
-        <!--PhotoFrame Col-->
+
+      <div class="row mt-4">
+        <!--Porfile pic and data-->
         <div class="col-lg-4 col-sm-12 text-center rounded">
-          <img src="imgs/perfil2.jpg" alt="Foto de Perfil" class="img-fluid rounded img-perfil img-responsive">
+          <div class="row">
+            <div class="col-12">
+              <img src="imgs/perfil2.jpg" alt="Foto de Perfil" class="img-fluid rounded-circle  img-responsive"
+                id="img-perfil">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <ul class="info-list fa-ul">
+                <li>
+                  <p class="info-text" id="name"><span class="fa-li"><i
+                        class="bi bi-person-circle"></i></i></span>Martin David
+                    Galvan Castro
+                  </p>
+                </li>
+                <li>
+                  <p class="info-text"><span class="fa-li"><i class="bi bi-geo-alt"></i></span>Bogotá, Colombia
+                </li>
+                </p>
+                </li>
+                <li>
+                  <p class="info-text"><span class="fa-li"><i class="bi bi-telephone-plus"></i></span>(+571) 305-7066739
+                  </p>
+                </li>
+                <li>
+                  <p class="info-text"><span class="fa-li"><i
+                        class="bi bi-envelope"></i></span>martin2galvan@hotmail.com
+                  </p>
+                </li>
+                <li>
+                  <p class="info-text"><span class="fa-li"><i class="bi bi-github"></i></span><a
+                      href="https://github.com/MartinGalvanCastro">Khaez</a>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!--Information-->
         <div class="col-lg-8 col-sm-12 mt-4" id="info-group">
-          <ul class="info-list fa-ul">
-            <li>
-              <p class="info-text"><span class="fa-li"><i class="bi bi-person-circle"></i></i></span>Martin David
-                Galvan Castro
-              </p>
-            </li>
-            <li>
-              <p class="info-text"><span class="fa-li"><i class="bi bi-geo-alt"></i></span>Bogotá, Colombia
-            </li>
-            </p>
-            </li>
-            <li>
-              <p class="info-text"><span class="fa-li"><i class="bi bi-telephone-plus"></i></span>(+571) 305-7066739
-              </p>
-            </li>
-            <li>
-              <p class="info-text"><span class="fa-li"><i class="bi bi-envelope"></i></span>martin2galvan@hotmail.com
-              </p>
-            </li>
-            <li>
-              <p class="info-text"><span class="fa-li"><i class="bi bi-github"></i></span><a
-                  href="https://github.com/MartinGalvanCastro">Khaez</a>
-              <p></p>
-            </li>
-            <li>
-              <p class="info-text"><span class="fa-li"><i class="bi bi-file-text"></i></span>Mechanical Engineer
-                graduated from the Universidad de los Andes, currently a senior computer and systems engineering
-                student at the Universidad de los Andes.
-                With interests in systems simulation and modeling, numerical methods, robotics,
-                industry 4.0. With experience working with Python, Latex, Django, ROSPy, Java,
-                Matlab, MySQL, MongoDB, PyGame, Angular,AWS, 3D CAD modelling in Autodesk
-                Inventor and Finite Element Simulation for stress analysis on Ansys Workbench.
-              </p>
-            </li>
-            <li>
-              <p class="info-text"><span class="fa-li"><i class="bi bi-chat-left-text"></i></span>My Hobbies are play
-                videogames, watch series, and hangout with my family, friends and my girlfriend
-              </p>
-            </li>
-          </ul>
+          <!--Title section header-->
+          <header class="row" id="section-header">
+            <div class="col-lg-12 ">
+              <h2>Who Am I?</h2>
+            </div>
+          </header>
+          <!--Information-->
+          <article class="row section-content">
+            <ul class="info-list fa-ul">
+              <li>
+                <p class="info-text"><span class="fa-li"><i class="bi bi-file-text"></i></span>Mechanical Engineer
+                  graduated from the Universidad de los Andes, currently a senior computer and systems engineering
+                  student at the Universidad de los Andes.
+                  With interests in systems simulation and modeling, numerical methods, robotics,
+                  industry 4.0. With experience working with Python, Latex, Django, ROSPy, Java,
+                  Matlab, MySQL, MongoDB, PyGame, Angular,AWS, 3D CAD modelling in Autodesk
+                  Inventor and Finite Element Simulation for stress analysis on Ansys Workbench.
+                </p>
+              </li>
+              <li>
+                <p class="info-text"><span class="fa-li"><i class="bi bi-chat-left-text"></i></span>My Hobbies are play
+                  videogames, watch series, and hangout with my family, friends and my girlfriend
+                </p>
+              </li>
+              <li>
+                <p class="info-text"><span class="fa-li"><i class="bi bi-star"></i></i></span>I like rock and Lo-Fi
+                  music, my favorite videogame is Halo and my favorite book is Ready Player One (By Ernest Cline)
+              </li>
+            </ul>
         </div>
-      </article>
+        </article>
+      </div>
+      </div>
+
     </section>
     <!--Projects Section-->
     <section id="projects" class="container" id="section">
@@ -140,7 +162,7 @@
       <article class="row section-content">
         <div class="col mt-3">
           <!--Project 1-->
-          <div class="card h-60">
+          <div class="card h-60 rounded">
             <!--Card Header-->
             <iframe height="250" src="https://www.youtube.com/embed/3AkOYyTW40E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture 
                      allowfullscreen"></iframe>
@@ -163,7 +185,7 @@
         </div>
         <!--Project 2-->
         <div class="col mt-3">
-          <div class="card h-80">
+          <div class="card h-80 rounded">
             <!--Card Header-->
             <img src="imgs/apoyafem.png" class="card-img-top img-responsive w-75" alt="ApoyaFem Logo">
             <!--Card Body-->
@@ -183,7 +205,7 @@
         </div>
         <!--Project 3-->
         <div class="col mt-3">
-          <div class="card h-30">
+          <div class="card h-30 rounded">
             <!--Card Header-->
             <img src="imgs/Sencabot.JPG" class="card-img-top img-responsive" alt="Senecabot">
             <!--Card Body-->
