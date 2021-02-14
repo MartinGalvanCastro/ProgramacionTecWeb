@@ -1,0 +1,56 @@
+#banner, #footer{
+    text-align: center;
+    background-color: #6f4e37;
+}
+
+#menu{
+    text-align: center;
+    background-color:orange;
+}
+
+#top-menu{
+    text-align: center;
+    background-color:#c19c82;
+}
+
+div[class^="col"]{
+    padding:0px;
+    margin:0px;
+    z-index: 0;
+    text-align: center;
+}
+
+div[class^="row"]{
+    padding:0px;
+    margin:0px;
+}
+
+.container-fluid{
+    padding:0px;
+    margin:0px;
+}
+
+.p1{
+    background-color:lightcoral;
+}
+
+.p2{
+    background-color:lightblue;
+}
+
+.p1 p{
+    padding-top:15px;
+}
+
+.p2 p{
+    padding-top:15px;
+}
+
+.content{
+    height: 250px;
+    background-color:lightgrey;
+}
+
+.content h3{
+    padding-top:75px;
+}
