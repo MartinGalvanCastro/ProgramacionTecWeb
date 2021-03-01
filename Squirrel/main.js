@@ -50,7 +50,7 @@ let tablaA = (response) => {
 
     /*Se asigna el numero de fila, el contenido y si es squirrel*/
     numFila.setAttribute("scope", "row");
-    numFila.innerHTML = index + "";
+    numFila.innerHTML = (index+1) + "";
 
     eventos.innerHTML = item.events.join(",");
 
@@ -105,7 +105,7 @@ let tablaB = (res) => {
 
     /*Se asigna el numero de fila, el contenido y si es squirrel*/
     numFila.setAttribute("scope", "row");
-    numFila.innerHTML = index + "";
+    numFila.innerHTML = (index+1) + "";
 
     evento.innerHTML = item.nombre;
     correlacion.innerHTML = item.MCC;
