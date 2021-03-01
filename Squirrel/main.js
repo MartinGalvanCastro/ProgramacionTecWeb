@@ -4,8 +4,8 @@ const url =
 const eventoBody = document.getElementById("tabla-evento-cuerpo");
 const correlacionBody = document.getElementById("tabla-correlacion-cuerpo");
 
-console.log(eventoBody)
-console.log(correlacionBody)
+console.log(eventoBody);
+console.log(correlacionBody);
 
 function eventoObj(nombre) {
   this.nombre = nombre;
@@ -64,62 +64,65 @@ let tablaA = (response) => {
   });
 };
 
+let tablaB = (res) => {
+  /*------------------------TABLA B--------------------------*/
+
+  eventosArr = [];
+  res.forEach((item) => {
+    eventosArr = eventosArr.concat(
+      item.events.filter((event) => !eventosArr.includes(event))
+    );
+  });
+  eventosArr = eventosArr.map((event) => {
+    return new eventoObj(event);
+  });
+
+  res.forEach((item) => {
+    eventosArr.forEach((eventI) => {
+      if (item.events.includes(eventI.nombre) && item.squirrel) {
+        eventI.TP += 1;
+      } else if (item.events.includes(eventI.nombre) && !item.squirrel) {
+        eventI.FP += 1;
+      } else if (!item.events.includes(eventI.nombre) && item.squirrel) {
+        eventI.FN += 1;
+      } else if (!item.events.includes(eventI.nombre) && !item.squirrel) {
+        eventI.TN += 1;
+      }
+    });
+  });
+
+  eventosArr.map((event) => event.getMCC());
+  eventosArr = eventosArr.sort((a, b) =>
+    a.MCC > b.MCC ? -1 : a.MCC < b.MCC ? 1 : 0
+  );
+
+  eventosArr.forEach((item, index) => {
+    /*Se crean los elementos HTML*/
+    let filaEvento = document.createElement("tr");
+    let numFila = document.createElement("th");
+    let evento = document.createElement("td");
+    let correlacion = document.createElement("td");
+
+    /*Se asigna el numero de fila, el contenido y si es squirrel*/
+    numFila.setAttribute("scope", "row");
+    numFila.innerHTML = index + "";
+
+    evento.innerHTML = item.nombre;
+    correlacion.innerHTML = item.MCC;
+
+    /*Se hace los apend*/
+    filaEvento.appendChild(numFila);
+    filaEvento.appendChild(evento);
+    filaEvento.appendChild(correlacion);
+    correlacionBody.appendChild(filaEvento);
+  });
+};
+
 fetch(url)
   .then((res) => res.json())
   .then((res) => {
     console.log(res);
     tablaA(res);
-
-    /*------------------------TABLA B--------------------------*/
-
-    eventosArr = [];
-    res.forEach((item) => {
-      eventosArr = eventosArr.concat(
-        item.events.filter((event) => !eventosArr.includes(event))
-      );
-    });
-    eventosArr = eventosArr.map((event) => {
-      return new eventoObj(event);
-    });
-
-    res.forEach((item) => {
-      eventosArr.forEach((eventI) => {
-        if (item.events.includes(eventI.nombre) && item.squirrel) {
-          eventI.TP += 1;
-        } else if (item.events.includes(eventI.nombre) && !item.squirrel) {
-          eventI.FP += 1;
-        } else if (!item.events.includes(eventI.nombre) && item.squirrel) {
-          eventI.FN += 1;
-        } else if (!item.events.includes(eventI.nombre) && !item.squirrel) {
-          eventI.TN += 1;
-        }
-      });
-    });
-
-    eventosArr.map((event) => event.getMCC());
-    eventosArr = eventosArr.sort((a, b) =>
-      a.MCC > b.MCC ? -1 : a.MCC < b.MCC ? 1 : 0
-    );
-
-    eventosArr.forEach((item, index) => {
-      /*Se crean los elementos HTML*/
-      let filaEvento = document.createElement("tr");
-      let numFila = document.createElement("th");
-      let evento = document.createElement("td");
-      let correlacion = document.createElement("td");
-
-      /*Se asigna el numero de fila, el contenido y si es squirrel*/
-      numFila.setAttribute("scope", "row");
-      numFila.innerHTML = index + "";
-
-      evento.innerHTML = item.nombre;
-      correlacion.innerHTML = item.MCC;
-
-      /*Se hace los apend*/
-      filaEvento.appendChild(numFila);
-      filaEvento.appendChild(evento);
-      filaEvento.appendChild(correlacion);
-      correlacionBody.appendChild(filaEvento);
-    });
+    tablaB(res);
   })
   .catch((err) => console.log("Error al obtener el recurso: " + err));
