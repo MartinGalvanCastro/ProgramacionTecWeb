@@ -1,5 +1,5 @@
 {
-  "name": "NodeJS",
+  "name": "squirrel",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Martin Galvan",
   "license": "ISC",
   "devDependencies": {
-    "axios": "^0.21.1",
-    "eslint": "^7.20.0"
+    "eslint": "^7.20.0",
+    "node-fetch": "^2.6.1"
   }
 }
