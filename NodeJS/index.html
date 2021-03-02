@@ -16,7 +16,19 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   </head>
   <body class="container">
-    <header><h1 id ="titulo">Perdon :c</h1></header>
+    <header><h1 id ="titulo">Tabla {{nombre}}</h1></header>
+    <main>
+      <table class="table table-striped">
+        <thead>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Contacto</th>
+        </thead>
+        <tbody>
+          {{cuerpoTabla}}
+        </tbody>
+      </table>
+    </main>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
