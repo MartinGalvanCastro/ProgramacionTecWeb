@@ -1,9 +1,8 @@
 var express = require("express");
 var router = express.Router();
 const joi = require("joi");
-const fs = require("fs");
 
-const jsonRoute = "./JSON/messages.json";
+const Message = require("../models/message");
 
 /**
  * Función para validar el mensaje
@@ -19,127 +18,58 @@ function validateMessage(message) {
       .string()
       .required()
       .min(5),
-    ts:joi
+    id:joi
       .number()
   });
 
   return schema.validate(message);
 }
 
-/**
- * Función para leer un archivo JSON
- * @param {function} callback función para manipular el archivo
- */
-function getFileContent(callback) {
-  fs.readFile(jsonRoute, (err, data) => {
-    if (err) throw err;
-    callback(data.toString());
-  });
-}
 
 /* GET messages listing. */
 router.get("/", function (req, res, next) {
-  getFileContent((data) => {
-    if (!data) res.status(200).send(JSON.parse("[]"));
-    else {
-      const messages = JSON.parse(data);
-      res.status(200).send(messages);
-    }
-  });
+  Message.findAll().then(result=>{
+    res.status(200).send(result);
+  })
 });
 
 /*GET BY message ID*/
-router.get("/:ts", function (req, res, next) {
-  getFileContent((data) => {
-    const messages = JSON.parse(data);
-    const message = messages.find(
-      (item) => item.ts === parseInt(req.params.ts)
-    );
-    if (!message) res.status(404).send("Message not found");
-    res.status(200).send(message);
+router.get("/:id", function (req, res, next) {
+  Message.findByPk(req.params.id).then(result=>{
+    if(result===null) res.status(404).send("Message not found")
+    else{res.status(200).send(result);}  
   });
 });
 
 /*POST new message */
 router.post("/", function (req, res, next) {
-  getFileContent((data) => {
-    //Validación
-    const { error } = validateMessage(req.body);
-    if (error) res.status(400).send(error.details[0].message);
-    else {
-      let message;
-      let messages;
-      //Creación
-      if (!data) {
-        messages = [];
-        message = {
-          ts: 1,
-          author: req.body.author,
-          message: req.body.message,
-        };
-      } else {
-        messages = JSON.parse(data);
-        message = {
-          ts: messages.length + 1,
-          author: req.body.author,
-          message: req.body.message,
-        };
-      }
-      messages.push(message);
-      fs.writeFileSync(jsonRoute, JSON.stringify(messages));
-      res.status(200).send(message);
-    }
-  });
+  const {error} = validateMessage(req.body);
+  if(error) return res.status(404).send(error.details[0].message);
+  else{
+    const {author,message} = req.body;
+    Message.create({author, message}).then(response=>{
+      res.status(200).send(response);
+    });
+  }
 });
 
 /*PUT update a message by id*/
-router.put("/:ts", function (req, res, next) {
-  getFileContent((data) => {
-    if (!data) res.status(404).send("Message not found");
-    else {
-      const messages = JSON.parse(data);
-      const message = messages.find(
-        (item) => item.ts === parseInt(req.params.ts)
-      );
-      if (!message) res.status(404).send("Message not found");
-      else {
-        //Validación
-        const { error } = validateMessage(req.body);
-        if (error) res.status(400).send(error.details[0].message);
-        else {
-
-          const index = messages.indexOf(message)
-
-          message.author = req.body.author;
-          message.message = req.body.message;
-
-          
-          messages[index]=message;
-          fs.writeFileSync(jsonRoute, JSON.stringify(messages));
-          res.status(200).send(message);
-        }
-      }
-    }
-  });
+router.put("/:id", function (req, res, next) {
+  const {error} = validateMessage(req.body);
+  if(error) return res.status(404).send(error.details[0].message);
+  else{
+    Message.update(req.body,{where:{id:req.params.id}}).then(response=>{
+      if(response[0]===0) res.status(404).send("Message not found")
+      else {res.status(200).send("Message Updated");}
+    });
+  }
 });
 
 /*DELETE deleta a message by id*/
-router.delete("/:ts", function (req, res, next) {
-  getFileContent((data) => {
-    if (!data) res.status(404).send("Message not found");
-    else {
-      const messages = JSON.parse(data);
-      const message = messages.find(
-        (item) => item.ts === parseInt(req.params.ts)
-      );
-      if (!message) res.status(404).send("Message not found");
-      else {
-          const index = messages.indexOf(message)
-          messages.splice(index);
-          fs.writeFileSync(jsonRoute, JSON.stringify(messages));
-          res.status(204);
-      }
-    }
+router.delete("/:id", function (req, res, next) {
+  Message.destroy({where:{id:req.params.id}}).then(result=>{
+    if(result===0) res.status(404).send("Message not found");
+    else{res.status(204).send("Message deleted")}
   });
 });
 
