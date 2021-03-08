@@ -1,4 +1,6 @@
 # Express + Sequelize
+Author: Martin Galvan-201614423
+
 
 ## HOW TO RUN:
 1. npm start
