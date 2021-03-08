@@ -1,12 +1,12 @@
 const ws = new WebSocket("ws://localhost:3000");
 
+
 ws.onmessage = (msg) => {
   renderMessages(JSON.parse(msg.data));
 };
 
 const renderMessages = (data) => {
-  console.log(data)
-  const html = data.map((item) => `<p>${item}</p>`).join(" ");
+  const html = data.map((item) => `<p><strong>${item.author}:</strong> ${item.message}</p>`).join(" ");
   document.getElementById("messages").innerHTML = html;
 };
 
