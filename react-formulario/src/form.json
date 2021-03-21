@@ -1,0 +1,78 @@
+{
+
+    "metadata":{
+        "autocomplete":"nope"
+    },
+
+    "fields":[
+    {
+        "id": "first-name",
+        "label": "First Name",
+        "type": "text",
+        "placeHolder": "Your first name",
+        "validation": {
+            "required": true,
+            "minLength": 3,
+            "pattern": "/^[A-Za-z]*$/"
+        }
+    },
+    {
+        "id": "last-name",
+        "label": "Last Name",
+        "type": "text",
+        "placeHolder": "Your last name",
+        "validation": {
+            "required": true,
+            "minLength": 3
+        }
+    },
+    {
+        "id": "email",
+        "label": "Email",
+        "placeHolder": "Your email",
+        "validation": {
+            "required": true,
+            "pattern": "/^[A-Za-z]*$/"
+        }
+    },
+    {
+        "id": "phone-number",
+        "label": "Phone number",
+        "type": "tel",
+        "placeHolder": "Your Phone Number",
+        "validation": {
+            "required": true,
+            "pattern": "/^3[0-9]{9}$/"
+        }
+    },
+    {
+        "id": "password",
+        "label": "Password",
+        "type": "password",
+        "placeHolder": "Your Password",
+        "validation": {
+            "required": true,
+            "minLength": 8
+        }
+    },
+    {
+        "id": "repeat-password",
+        "label": "Confirm Password",
+        "type": "password",
+        "placeHolder": "Confirm Your Password",
+        "validation": {
+            "required": true,
+            "minLength": 8
+        }
+    },
+    {
+        "id": "birth-date",
+        "label": "Birth Day",
+        "type": "date",
+        "placeHolder": "dd/mm/aaaa",
+        "validation": {
+            "required": true,
+            "over18": true
+        }
+    }
+]}
