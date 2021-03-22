@@ -1,78 +1,120 @@
 {
-
-    "metadata":{
-        "autocomplete":"nope"
+    "metadata": {
+        "autocomplete": "nope"
     },
-
-    "fields":[
-    {
-        "id": "first-name",
-        "label": "First Name",
-        "type": "text",
-        "placeHolder": "Your first name",
-        "validation": {
-            "required": true,
-            "minLength": 3,
-            "pattern": "/^[A-Za-z]*$/"
+    "fields": [
+        {
+            "id": "first-name",
+            "label": "First Name",
+            "type": "text",
+            "placeHolder": "Your first name",
+            "validation": [
+                {
+                    "name": "required",
+                    "value": true,
+                    "badMesssage": "First name is required"
+                },
+                {
+                    "name": "minLength",
+                    "value": 3,
+                    "badMessage": "Name to short"
+                },
+                {
+                    "name": "pattern",
+                    "value": "^[a-zA-Z]*$",
+                    "badMessage": "Name contains numbers or special characters"
+                }
+            ]
+        },
+        {
+            "id": "last-name",
+            "label": "Last Name",
+            "type": "text",
+            "placeHolder": "Your last name",
+            "validation": [
+                {
+                    "name": "required",
+                    "value": true,
+                    "badMesssage": "Last name is required"
+                },
+                {
+                    "name": "minLength",
+                    "value": 3,
+                    "badMessage": "Last name to short"
+                },
+                {
+                    "name": "pattern",
+                    "value": "^[a-zA-Z]*$",
+                    "badMessage": "Last name contains numbers or special characters"
+                }
+            ]
+        },
+        {
+            "id": "email",
+            "label": "Email",
+            "placeHolder": "Your email",
+            "type": "email",
+            "validation": [
+                {
+                    "name": "required",
+                    "value": true,
+                    "badMesssage": "Email is required"
+                }
+            ]
+        },
+        {
+            "id": "phone-number",
+            "label": "Phone number",
+            "type": "tel",
+            "placeHolder": "Your Phone Number",
+            "validation": [
+                {
+                    "name": "required",
+                    "value": true,
+                    "badMesssage": "Phone number is required"
+                },
+                {
+                    "name": "pattern",
+                    "value": "^3[0-9]{9}$",
+                    "badMessage": "Phone number has numeric characters"
+                }
+            ]
+        },
+        {
+            "id": "password",
+            "label": "Password",
+            "type": "password",
+            "placeHolder": "Your Password",
+            "validation": [
+                {
+                    "name": "required",
+                    "value": true,
+                    "badMesssage": "Password is required"
+                },
+                {
+                    "name": "minLength",
+                    "value": 8,
+                    "badMessage": "Password to short"
+                }
+            ]
+        },
+        {
+            "id": "repeat-password",
+            "label": "Confirm Password",
+            "type": "password",
+            "placeHolder": "Confirm Your Password",
+            "validation": [
+                {
+                    "name": "required",
+                    "value": true,
+                    "badMesssage": "Password is required"
+                },
+                {
+                    "name":"equal",
+                    "value":"password",
+                    "badMessage":"Password doesn't match"
+                }
+            ]
         }
-    },
-    {
-        "id": "last-name",
-        "label": "Last Name",
-        "type": "text",
-        "placeHolder": "Your last name",
-        "validation": {
-            "required": true,
-            "minLength": 3
-        }
-    },
-    {
-        "id": "email",
-        "label": "Email",
-        "placeHolder": "Your email",
-        "validation": {
-            "required": true,
-            "pattern": "/^[A-Za-z]*$/"
-        }
-    },
-    {
-        "id": "phone-number",
-        "label": "Phone number",
-        "type": "tel",
-        "placeHolder": "Your Phone Number",
-        "validation": {
-            "required": true,
-            "pattern": "/^3[0-9]{9}$/"
-        }
-    },
-    {
-        "id": "password",
-        "label": "Password",
-        "type": "password",
-        "placeHolder": "Your Password",
-        "validation": {
-            "required": true,
-            "minLength": 8
-        }
-    },
-    {
-        "id": "repeat-password",
-        "label": "Confirm Password",
-        "type": "password",
-        "placeHolder": "Confirm Your Password",
-        "validation": {
-            "required": true,
-            "minLength": 8
-        }
-    },
-    {
-        "id": "birth-date",
-        "label": "Birth Day",
-        "type": "date",
-        "placeHolder": "dd/mm/aaaa",
-        "validation": {
-            "required": true,
-            "over18": true
-        }
-    }
-]}
+    ]
+}
