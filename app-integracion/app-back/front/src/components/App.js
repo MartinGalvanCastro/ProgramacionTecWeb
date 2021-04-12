@@ -11,6 +11,7 @@ const App = () => (
   <Container className="p-3">
     <Jumbotron>
       <h1 className="header">Job List</h1>
+      <span>Actualizar pagina despues del ingresar la nueva oferta</span>
     </Jumbotron>
     <Row>
       <Col className="col-6 border border-dark">
